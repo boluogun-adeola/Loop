@@ -17,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="./style.css" rel="stylesheet"/>
 
     <title>Frontend Mentor | Loopstudios landing page</title>
@@ -41,17 +42,17 @@
           <li class="nav-link">Support</li>
         </ul>
       </nav>
-      <div class="header-content">
+      <div class="header-content" data-aos="fade-right">
         <h1>Immersive<br/> experiences<br/> that deliver</h1>
       </div>
     </header>
     <main>
       <section class="leader-section">
         <div class="leader-image">
-          <img src="./images/desktop/image-interactive.jpg" alt="a man using a virtual reality device" class="desktop"/>
-          <img src="./images/mobile/image-interactive.jpg" alt="a man using a virtual reality device" class="mobile"/>
+          <img src="./images/desktop/image-interactive.jpg" alt="a man using a virtual reality device" class="image-desktop" data-aos="fade-right" />
+          <img src="./images/mobile/image-interactive.jpg" alt="a man using a virtual reality device" class="image-mobile"/>
         </div>
-        <div class="leader-content">
+        <div class="leader-content" data-aos="fade-left">
           <h2>The leader in <br/>interactive VR</h2>
           <p>Founded in 2011, Loopstudios has been producing
             world-class virtual reality projects for some of the best companies around
@@ -66,42 +67,42 @@
         </div>
 
        <div class="creation-content">
-          <div class="creation-image">
+          <div class="creation-image" data-aos="slide-up">
            <img src="./images/desktop/image-deep-earth.jpg" alt="planet earth" class="desktop"/>
            <img src="./images/mobile/image-deep-earth.jpg" alt="planet earth" class="mobile"/>
            <p>Deep <br> Earth</p>
           </div>
-          <div class="creation-image">
+          <div class="creation-image" data-aos="slide-up">
             <img src="./images/desktop/image-night-arcade.jpg" alt="Night Arcade" class="desktop" />
             <img src="./images/mobile/image-night-arcade.jpg" alt="Night Arcade" class="mobile"/>
             <p>Night <br/>Arcade</p>
            </div>
-           <div class="creation-image">
+           <div class="creation-image" data-aos="slide-up">
             <img src="./images/desktop/image-soccer-team.jpg" alt="footballer playing with a ball" class="desktop"/>
             <img src="./images/mobile/image-soccer-team.jpg" alt="footballer playing with a ball" class="mobile"/>
             <p>Soccer<br/> Team VR</p>
            </div>
-           <div class="creation-image">
+           <div class="creation-image" data-aos="slide-up">
             <img src="./images/desktop/image-grid.jpg" alt="An Automobile" class="desktop"/>
             <img src="./images/mobile/image-grid.jpg" alt="An Automobile" class="mobile"/>
             <p>The<br/> Grid</p>
            </div>
-           <div class="creation-image">
+           <div class="creation-image" data-aos="slide-up">
             <img src="./images/desktop/image-from-above.jpg" alt="Up above" class="desktop"/>
             <img src="./images/mobile/image-from-above.jpg" alt="Up above" class="mobile"/>
             <p>From Up<br/> Above Vr</p>
            </div>
-           <div class="creation-image">
+           <div class="creation-image" data-aos="slide-up">
             <img src="./images/desktop/image-pocket-borealis.jpg" alt="pocket borealis" class="desktop"/>
             <img src="./images/mobile/image-pocket-borealis.jpg" alt="pocket borealis" class="mobile"/>
             <p>Pocket <br/>Borealis</p>
            </div>
-           <div class="creation-image">
+           <div class="creation-image" data-aos="slide-up">
             <img src="./images/desktop/image-curiosity.jpg" alt="A machine" class="desktop"/>
             <img src="./images/mobile/image-curiosity.jpg" alt="A machine" class="mobile"/>
             <p>The <br/>Curiosity</p>
            </div>
-           <div class="creation-image">
+           <div class="creation-image" data-aos="slide-up">
             <img src="./images/desktop/image-fisheye.jpg" alt="Fish eye" class="desktop"/>
             <img src="./images/mobile/image-fisheye.jpg" alt="Fish eye" class="mobile"/>
             <p>Make it <br/>Fisheye</p>
@@ -148,4 +149,10 @@
     </div>
   </body>
   <script src="./index.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+        })
+    </script>
 </html>
